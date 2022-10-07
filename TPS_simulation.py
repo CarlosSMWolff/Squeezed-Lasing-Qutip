@@ -32,7 +32,7 @@ class simulation:
         return rho_ss
 
     def g2g1(self,DeltaPair,g,gsens,kappa,P,Gamma,r):
-        rho_ss = self.rhoSS(self,DeltaPair,g,gsens,kappa,P,Gamma,r)
+        rho_ss = self.rhoSS(DeltaPair,g,gsens,kappa,P,Gamma,r)
 
         sigma1 = self.sigma1; sigma2 = self.sigma2; 
         G2w1w2 = expect(sigma1.dag()*sigma2.dag()*sigma1*sigma2,rho_ss)
